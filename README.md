@@ -1,6 +1,12 @@
-# infinite-scroll
+# infinite-scroll-preTest
 
-## Project setup
+- 框架：Vue 3
+- UI Library : TailwindCSS
+- Coding Style：ESLint + Airbnb + Prettier
+- description : 使用 IntersectionObserver 製作無限捲軸效果，取得個人 github repos。
+
+
+## Project Installation
 
 ```
 npm install
@@ -18,11 +24,13 @@ npm run serve
 npm run build
 ```
 
-### git Page 
-git Page (https://nevikwng.github.io/infinite-scroll-preTest/)  
+### Github Page Link
+
+## https://nevikwng.github.io/infinite-scroll-preTest/
+
+
 
 
 ### Customize configuration
-
 
 See [Configuration Reference](https://cli.vuejs.org/config/).
