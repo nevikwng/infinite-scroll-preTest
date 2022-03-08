@@ -3,7 +3,7 @@
 - 框架：Vue 3
 - UI Library : TailwindCSS
 - Coding Style：ESLint + Airbnb + Prettier
-- description : 使用 IntersectionObserver 製作無限捲軸效果，取得個人 github repos。
+- Description : 使用 IntersectionObserver 製作無限捲軸效果，取得個人 github repos。
 
 
 ## Project Installation
