@@ -18,12 +18,11 @@ npm run serve
 npm run build
 ```
 
-### Lints and fixes files
+### git Page 
+https://nevikwng.github.io/infinite-scroll-preTest/
 
-```
-npm run lint
-```
 
 ### Customize configuration
+
 
 See [Configuration Reference](https://cli.vuejs.org/config/).
