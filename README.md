@@ -28,8 +28,8 @@ npm run build
 
 ## https://nevikwng.github.io/infinite-scroll-preTest/
 
-
-
+### 備註
+Github API repo https://github.com/franklion
 
 ### Customize configuration
 
