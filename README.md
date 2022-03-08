@@ -19,7 +19,7 @@ npm run build
 ```
 
 ### git Page 
-https://nevikwng.github.io/infinite-scroll-preTest/
+git Page (https://nevikwng.github.io/infinite-scroll-preTest/)  
 
 
 ### Customize configuration
