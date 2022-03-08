@@ -1,18 +1,18 @@
 <template>
-<div class="bg-slate-100 py-8">
-  <div class="container my-0 mx-auto space-y-4">
-    <h1 class="text-5xl">{{ initData.userName }} repo List : </h1>
-    <DataList :data="dataList" />
-    <div v-if="isInit && !isLoading">loading...</div>
-    <div v-show="isLoading" ref="dataListEnd" />
+  <div class="bg-slate-100 py-8">
+    <div class="container my-0 mx-auto space-y-4">
+      <h1 class="text-5xl">{{ initData.userName }} repo List :</h1>
+      <DataList :data="dataList" />
+      <div v-if="isInit && !isLoading">loading...</div>
+      <div v-show="isLoading" ref="dataListEnd" />
+    </div>
   </div>
-</div>
 </template>
 
 <script>
-import { onMounted, ref } from 'vue';
-import axios from 'axios';
-import DataList from './components/DataList.vue';
+import { onMounted, ref } from "vue";
+import axios from "axios";
+import DataList from "./components/DataList.vue";
 
 export default {
   components: {
@@ -20,7 +20,7 @@ export default {
   },
   setup() {
     const initData = {
-      userName: 'franklion',
+      userName: "franklion",
       page: 1,
       perPage: 6,
     };
@@ -31,7 +31,15 @@ export default {
 
     const getDataList = async () => {
       try {
-        const { data } = await axios.get(`https://api.github.com/users/${initData.userName}/repos?page=${initData.page}&per_page=${initData.perPage}`);
+        const { data } = await axios.get(
+          `https://api.github.com/users/${initData.userName}/repos`,
+          {
+            params: {
+              page: initData.page,
+              per_page: initData.perPage,
+            },
+          }
+        );
         if (!isInit.value) {
           dataList.value = data;
         } else {
